@@ -2,7 +2,7 @@ library(dplyr)
 library(xml2)
 library(rvest)
 
-activity <- "C:/Users/ywon7/Desktop/GitHub/leed/activity.csv" %>% read.csv
+activity <- "C:/Users/ywon7/Desktop/GitHub/leed/data/activity.csv" %>% read.csv
 
 building.URL <- activity$building.URL %>% as.character %>% paste0("/details")
 

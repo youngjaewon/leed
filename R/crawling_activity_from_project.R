@@ -1,7 +1,7 @@
 library(dplyr)
 library(xml2)
 
-project.data <- "C:/Users/ywon7/Desktop/GitHub/leed/project.csv" %>% read.csv
+project.data <- "C:/Users/ywon7/Desktop/GitHub/leed/data/project.csv" %>% read.csv
 
 project.id <- project.data$project_source_id %>% stringr::str_replace_all(pattern="\\D", replacement="")
 
